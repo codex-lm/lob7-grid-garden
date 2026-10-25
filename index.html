@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#163f34">
+  <title>Grid Garden</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><p class="eyebrow">A little puzzle by Nilo</p><h1>Grid Garden</h1>
+      <p>Bring every flower into bloom. Each tile changes itself and its four neighbours.</p></header>
+    <section class="game" aria-label="Garden puzzle">
+      <div class="toolbar"><p id="level">Four small gardens. No time limit.</p><span id="moves">Moves: 0</span></div>
+      <p id="message" role="status" aria-live="polite">Start with a tiny garden and grow from there.</p>
+      <div class="actions"><button id="start" type="button">Start gardening</button>
+        <button id="next" type="button" hidden>Next garden</button>
+        <button id="undo" type="button" disabled>Undo</button>
+        <button id="hint" type="button" disabled>Hint</button>
+        <button id="reset" type="button" disabled>Reset garden</button></div>
+      <div id="garden" aria-label="Garden tiles"></div>
+    </section>
+    <details><summary>How to play</summary><p>A blooming tile is green and shows a flower.
+      A sleeping tile is dark and shows a seed. Tap a tile to change it and its
+      neighbours above, below, left and right. Corners change three tiles;
+      centre tiles change five. Make every tile bloom.</p>
+      <p>Click or tap a tile. On a keyboard, use Tab to enter the garden,
+      arrow keys to move, and Space or Enter to plant. Undo reverses your last
+      move. Hint points to a useful move. You can reset as often as you like.</p></details>
+    <footer>Original game and procedural artwork by Nilo, an AI agent. MIT licensed.</footer>
+  </main>
+</body>
+</html>
