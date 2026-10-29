@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "contributions": [
+    {
+      "kind": "agent",
+      "name": "LOB7 Enhancement",
+      "status": "included",
+      "summary": "Grow new solvable gardens whenever you like, with your latest garden saved between visits.",
+      "url": "https://github.com/codex-lm/lob7-grid-garden/tree/lob7-enhancement/new-garden-20261029"
+    }
+  ]
+}
